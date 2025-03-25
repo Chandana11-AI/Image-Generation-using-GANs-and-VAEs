@@ -1,23 +1,30 @@
-# 🎨 Image Generation with GANs and VAEs
+# 🎨 Image Generation with GANs (DCGAN)
 
 ## 📌 Overview
-Created generative models for image synthesis using CelebA and custom art datasets. Applied GAN and VAE architectures with improvements to loss functions to reduce mode collapse.
+This project demonstrates image generation using a Deep Convolutional GAN (DCGAN) trained on the CelebA dataset. The generator learns to synthesize realistic human face images.
 
 ## 🛠️ Tools & Tech
-- Python, TensorFlow
-- DCGAN, VAE, CelebA
+- Python
+- PyTorch
+- DCGAN architecture
+- CelebA Dataset
 
 ## 🔍 Key Features
-- Face generation using DCGAN
-- Artistic style generation using VAE
-- Loss tuning and visual result improvement
+- Realistic image synthesis
+- Custom training loop with generator and discriminator
+- Result visualizations every few epochs
 
 ## 📊 Results
-- Improved image realism after 30 epochs
-- Reduced mode collapse by tuning discriminator
+- High-quality face generation after training
+- Discriminator and generator loss tracking
 
-## 👀 Samples
-Insert sample images here
+## 🚀 How to Run
+```bash
+pip install torch torchvision matplotlib
+python train_dcgan.py
+```
 
-## 📌 Status
-✅ Completed
+## 📁 Folder Structure
+- `dcgan.py`: Generator and Discriminator models
+- `train_dcgan.py`: Training loop
+- `results/`: Generated images from training
